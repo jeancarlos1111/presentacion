@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Aplicación de Presentación</title>
+  <link rel="stylesheet" href="css/uikit.min.css" />
+  <link rel="stylesheet" href="css/uikit.gradient.min.css" />
+  <link rel="stylesheet" href="css/components/form-file.gradient.min.css" />
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="jQuery-2.1.4.min.js"></script>
+  <script src="js/uikit.min.js"></script>
+  <script src="operador.js"></script>
+  <style>
+  .frame {
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+  }
+
+  .frame iframe
+  {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  </style>
+</head>
+<body>
+  <div class="uk-container uk-container-center">
+    <div class="uk-grid" data-uk-grid-margin>
+      <h3 class="uk-heading-large">Example</h3>
+      <div class="uk-width-medium-1-1">
+        <div class="uk-panel uk-panel-box">
+          <div class="uk-panel-teaser frame">
+            <iframe width="640" height="360" src="http://localhost:8080" frameborder="0" ></iframe>
+          </div>
+          <p>
+            <span id="conexiones" class="uk-badge uk-badge-notification"></span>
+            <span id="conetados" class="uk-badge uk-badge-notification uk-badge-success"></span>
+          </p>
+          <div class="uk-grid uk-overflow-container">
+            <div class="uk-width-medium-1-6"><img class="uk-thumbnail uk-thumbnail-mini" src="img/1.png" alt=""></div>
+            <div class="uk-width-medium-1-6"><img class="uk-thumbnail uk-thumbnail-mini" src="img/2.png" alt=""></div>
+            <div class="uk-width-medium-1-6"><img class="uk-thumbnail uk-thumbnail-mini" src="img/3.png" alt=""></div>
+            <div class="uk-width-medium-1-6"><img class="uk-thumbnail uk-thumbnail-mini" src="img/4.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
