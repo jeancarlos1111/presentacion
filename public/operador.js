@@ -1,4 +1,4 @@
-var socket = io.connect('http://localhost:8080', { 'forceNew': true });
+var socket = io.connect('https://presentacion.herokuapp.com/', { 'forceNew': true });
 
 $(document).ready(function(){
   /*$("#imagefile").on('change', function(e){
