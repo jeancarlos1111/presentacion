@@ -1,4 +1,4 @@
-var socket = io.connect('http://192.168.0.4:3000', { 'forceNew': true });
+var socket = io.connect('https://presentacion.herokuapp.com/', { 'forceNew': true });
 
 $(document).ready(function(){
   /*$("#imagefile").on('change', function(e){
