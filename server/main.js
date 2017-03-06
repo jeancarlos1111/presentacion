@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
+const port = process.env.PORT || 3000;
 var conexiones = [];
 var conectados = [];
 app.use(express.static('public'));
@@ -41,6 +42,6 @@ io.sockets.on('connection', function(socket) {
 
 
 
-server.listen(3000, function() {
-  console.log("Servidor corriendo en http://localhost:8080");
+server.listen(port, function() {
+  console.log("Servidor corriendo en http://localhost:3000");
 });
